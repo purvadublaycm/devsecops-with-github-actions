@@ -175,7 +175,7 @@ Resources:
     Properties:
       KeyName: !Ref KeyName
       ImageId: !Ref LatestAmiId
-      InstanceType: 't2.micro'
+      InstanceType: 't3.micro'
       Monitoring: 'false'
       SecurityGroups:
         - !Ref PyGoatSecurityGroup
