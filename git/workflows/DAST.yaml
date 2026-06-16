@@ -8,6 +8,10 @@ jobs:
   zap_baseline_scan:
     runs-on: ubuntu-latest
     name: ZAP Baseline Scan
+    # This is needed to grant our GITHUB_TOKEN read access to the repository and for writing findings to GitHub issues
+    permissions:
+      contents: read
+      issues: write 
     steps:
       - name: Get GitHub Action IP
         id: ip
